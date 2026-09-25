@@ -1,0 +1,6 @@
+{
+  "name": "Campus Chronicles: Two Sides of the Same Chaos",
+  "description": "A sarcastic, claymorphism-styled look at college life from both student and professor perspectives.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

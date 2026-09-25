@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Nunito', sans-serif;
+  }
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Fredoka', 'Nunito', cursive, sans-serif;
+  }
+}
+
+/* Doctor Handwriting Mode (Rx Illegible Medical Scribble) */
+.font-doctor {
+  font-family: 'Qwitcher Grypen', 'Cedarville Cursive', cursive !important;
+}
+
+.doctor-mode h1,
+.doctor-mode h2,
+.doctor-mode h3,
+.doctor-mode h4,
+.doctor-mode .font-display,
+.doctor-mode blockquote {
+  font-family: 'Qwitcher Grypen', cursive !important;
+  letter-spacing: 0.02em;
+}
+
+.doctor-rx-seal {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(239, 68, 68, 0.03),
+    rgba(239, 68, 68, 0.03) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+/* Claymorphism Soft 3D Lighting & Shadows */
+.clay-card-student {
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 
+    12px 16px 30px -4px rgba(140, 120, 200, 0.14),
+    -10px -10px 24px 0px rgba(255, 255, 255, 0.95),
+    inset 3px 3px 6px 0px rgba(255, 255, 255, 0.9),
+    inset -4px -4px 10px 0px rgba(167, 139, 250, 0.18);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clay-card-student:hover {
+  transform: translateY(-3px);
+  box-shadow: 
+    14px 20px 34px -4px rgba(140, 120, 200, 0.18),
+    -10px -10px 24px 0px rgba(255, 255, 255, 0.98),
+    inset 3px 3px 6px 0px rgba(255, 255, 255, 0.95),
+    inset -4px -4px 10px 0px rgba(167, 139, 250, 0.22);
+}
+
+.clay-card-teacher {
+  background: #fbf9f5;
+  border-radius: 28px;
+  box-shadow: 
+    14px 18px 32px -4px rgba(95, 80, 70, 0.16),
+    -10px -10px 24px 0px rgba(255, 255, 255, 0.9),
+    inset 4px 4px 7px 0px rgba(255, 255, 255, 0.85),
+    inset -4px -4px 10px 0px rgba(120, 105, 90, 0.16);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clay-card-teacher:hover {
+  transform: translateY(-3px);
+  box-shadow: 
+    16px 22px 36px -4px rgba(95, 80, 70, 0.2),
+    -10px -10px 24px 0px rgba(255, 255, 255, 0.95),
+    inset 4px 4px 7px 0px rgba(255, 255, 255, 0.9),
+    inset -4px -4px 10px 0px rgba(120, 105, 90, 0.2);
+}
+
+/* Clay Button Styles */
+.clay-btn-student {
+  border-radius: 24px;
+  box-shadow: 
+    6px 8px 18px -2px rgba(147, 112, 219, 0.25),
+    -4px -4px 12px 0px rgba(255, 255, 255, 0.85),
+    inset 2px 2px 4px 0px rgba(255, 255, 255, 0.8),
+    inset -2px -2px 6px 0px rgba(139, 92, 246, 0.25);
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clay-btn-student:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 
+    3px 4px 10px -2px rgba(147, 112, 219, 0.3),
+    -2px -2px 8px 0px rgba(255, 255, 255, 0.7),
+    inset 3px 3px 6px 0px rgba(139, 92, 246, 0.25),
+    inset -1px -1px 4px 0px rgba(255, 255, 255, 0.6);
+}
+
+.clay-btn-teacher {
+  border-radius: 24px;
+  box-shadow: 
+    7px 9px 20px -2px rgba(90, 75, 65, 0.22),
+    -4px -4px 12px 0px rgba(255, 255, 255, 0.8),
+    inset 2px 2px 5px 0px rgba(255, 255, 255, 0.75),
+    inset -3px -3px 6px 0px rgba(110, 90, 75, 0.22);
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clay-btn-teacher:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 
+    3px 4px 10px -2px rgba(90, 75, 65, 0.28),
+    -2px -2px 8px 0px rgba(255, 255, 255, 0.65),
+    inset 3px 3px 6px 0px rgba(110, 90, 75, 0.24),
+    inset -1px -1px 4px 0px rgba(255, 255, 255, 0.6);
+}
+
+/* Clay Inset Wells (for gauges, meters, input tracks) */
+.clay-inset-student {
+  box-shadow: 
+    inset 4px 5px 9px rgba(130, 110, 180, 0.18),
+    inset -3px -3px 8px rgba(255, 255, 255, 0.9),
+    1px 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+.clay-inset-teacher {
+  box-shadow: 
+    inset 5px 6px 10px rgba(90, 75, 65, 0.18),
+    inset -3px -3px 8px rgba(255, 255, 255, 0.85),
+    1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Clay Knob & Pill Toggle */
+.clay-switch-track-student {
+  background: #EAE3F7;
+  box-shadow: 
+    inset 5px 5px 10px rgba(140, 120, 200, 0.22),
+    inset -4px -4px 9px rgba(255, 255, 255, 0.95),
+    4px 6px 14px rgba(150, 130, 210, 0.12);
+}
+
+.clay-switch-track-teacher {
+  background: #E6E1D7;
+  box-shadow: 
+    inset 5px 5px 10px rgba(100, 85, 75, 0.22),
+    inset -4px -4px 9px rgba(255, 255, 255, 0.9),
+    4px 6px 14px rgba(90, 75, 65, 0.12);
+}
+
+.clay-knob-student {
+  background: linear-gradient(135deg, #ffffff 0%, #F5F0FF 100%);
+  box-shadow: 
+    4px 6px 14px rgba(147, 112, 219, 0.35),
+    -2px -2px 6px rgba(255, 255, 255, 0.9),
+    inset 2px 2px 4px rgba(255, 255, 255, 1),
+    inset -2px -2px 5px rgba(167, 139, 250, 0.25);
+}
+
+.clay-knob-teacher {
+  background: linear-gradient(135deg, #ffffff 0%, #F7F4EC 100%);
+  box-shadow: 
+    4px 6px 14px rgba(80, 65, 55, 0.3),
+    -2px -2px 6px rgba(255, 255, 255, 0.9),
+    inset 2px 2px 4px rgba(255, 255, 255, 1),
+    inset -2px -2px 5px rgba(110, 95, 80, 0.25);
+}
+
+/* Subtle clay floating animation */
+@keyframes clayFloatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+@keyframes clayFloatReverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(8px) rotate(-2deg);
+  }
+}
+
+.animate-clay-float-slow {
+  animation: clayFloatSlow 7s ease-in-out infinite;
+}
+
+.animate-clay-float-rev {
+  animation: clayFloatReverse 8.5s ease-in-out infinite;
+}
